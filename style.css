@@ -1,0 +1,49 @@
+:root {
+  --bg: #ffeef4;       /* صورتی خیلی ملایم برای پس‌زمینه */
+  --text: #ff69b4;     /* صورتی پررنگ برای متن ساعت */
+  --accent: #ffb6c1;   /* صورتی پاستیلی برای جزئیات */
+  --weekend: #ff85c1;  /* صورتی روشن و جذاب برای تعطیلات */
+  --shadow: rgba(255,105,180,0.3);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Comic Sans MS", "Segoe UI", sans-serif; /* گوگولی و فانتزی */
+}
+
+.clock-container {
+  text-align: center;
+  padding: 30px 40px;
+  border-radius: 20px;
+  background: #fff0f5;  /* صورتی خیلی روشن */
+  box-shadow: 0 8px 25px var(--shadow);
+  border: 2px solid var(--accent);
+}
+
+#day {
+  margin: 0;
+  font-size: 1.3rem;
+  letter-spacing: 0.6px;
+}
+
+.time {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-top: 10px;
+  color: var(--text);
+  text-shadow: 2px 2px 4px var(--shadow);
+}
+
+.weekend {
+  color: var(--weekend);
+  font-weight: 800;
+  text-shadow: 1px 1px 3px #ffb6c1;
+}
